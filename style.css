@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.edificio {
+    z-index: 2;
+    background: #2e2c2a;
+    height: 500px;
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #7b7b7b78 9px 7px 6px;
+}
+
+.fondo {
+    position: fixed;
+    background:antiquewhite;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    column-gap: 14px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.fondo::before{
+    content: "";
+    z-index: 1;
+    display: block;
+    background: #e9831e;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    border-radius: 50%;
+}
+.edificio span{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: blanchedalmond;
+}
